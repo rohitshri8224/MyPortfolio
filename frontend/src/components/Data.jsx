@@ -5,7 +5,7 @@ const projectData = [
     
     id:1,
     projectName:"MyPortfolio",
-    demo:"https://github.com/rohitshri8224/E-commerce-ShoppingCart",
+    demo:"https://github.com/rohitshri8224/my-portfolio",
     imgSrc: "/logo.svg"
     
 },
