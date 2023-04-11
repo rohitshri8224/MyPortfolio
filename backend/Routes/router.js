@@ -42,20 +42,20 @@ router.post("/register", async (req, res) => {
                     console.log("error" + error)
                 } else {
                     console.log("Email sent" + info.response);
-                    res.status(201).json({ status: 201, message: "Email sent SUccesfully" })
+                  return  res.status(201).json({ status: 201, message: "Email sent SUccesfully" })
                 }
             });
-            res.status(201).send({ status: 201, saveUser })
+            return res.status(201).send({ status: 201, saveUser })
         }
     } catch (err) {
-        res.status(500).json({ status: false, message: err })
+       return res.status(500).json({ status: false, message: err })
     }
 })
 
 router.get("/download", (req,res)=>{
-    res.download("./resume/My_resume_rohit.pdf")
+   return res.download("./resume/My_resume_rohit.pdf")
     
 })
-
+ 
 
 module.exports = router;
