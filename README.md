@@ -15,3 +15,5 @@ all the details of the user is save in the database apart from that user receive
 
 And in the form validations is also used like while user give wrong email or don't fill any field so it give 
 a pop-up or alert through react.js toast library.
+
+
